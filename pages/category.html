@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category</title>
+    <link rel="stylesheet" href="../style/category.css">
+    <link rel="stylesheet" href="../style/main.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h4>
+                <img src="image/logo2.png" alt="">
+                <span>BOOK HEAVEN</span4>
+                    <!-- span brer nv pel jg display inline -->
+            </h4>
+
+            <div class="nav-link">
+                <a href="../index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="category.html">Category</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="auth">
+                <button class="login">Log In</button>
+                <button class="signup">Sign Up</button>
+            </div>
+        </nav>
+    </header>
+    <!-- Horizontal categories -->
+  <div class="categories">
+    <button class="category" onclick="showBooks('novel')">Novel</button>
+    <button class="category" onclick="showBooks('comics')">Comics</button>
+    <button class="category" onclick="showBooks('history')">History</button>
+    <button class="category" onclick="showBooks('education')">Education</button>
+    <button class="category" onclick="showBooks('funstory')">Fun Story</button>
+  </div>
+
+  <!-- Books -->
+  <div class="books" id="books-container">
+    <!-- Example books -->
+    <div class="book" data-type="novel">Novel 1</div>
+    <div class="book" data-type="comics">Comic 1</div>
+    <div class="book" data-type="history">History 1</div>
+    <div class="book" data-type="education">Education 1</div>
+    <div class="book" data-type="funstory">Fun Story 1</div>
+    <div class="book" data-type="novel">Novel 2</div>
+    <div class="book" data-type="comics">Comic 2</div>
+    <!-- Add more books as needed -->
+  </div>
+
+  <script>
+    function showBooks(type) {
+      const books = document.querySelectorAll('.book');
+      books.forEach(book => {
+        if(type === 'all' || book.dataset.type === type){
+          book.style.display = 'block';
+        } else {
+          book.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
