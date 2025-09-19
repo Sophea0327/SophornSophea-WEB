@@ -30,35 +30,71 @@
             </div>
         </nav>
     </header>
+    <hr>
 
+   <!-- Contact & Location -->
+        <section id="contact" aria-labelledby="contact-title">
+            <h3 id="contact-title" style="color:var(--brand-dark)">Contact & Location</h3>
 
-    <section class="contact">
-        <h2>Contact Us</h2>
-        <p>If you have any questions or feedback, feel free to reach out to us.</p>
-        <form class="contact-form" action="#" method="POST">
-            <div class="form-group">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            <div class="contact-row" style="margin-top:12px">
+                <!-- Contact form -->
+                <div class="contact-card" aria-label="Contact form">
+                    <h4 style="margin-top:0">Send us a message</h4>
+                    <p style="color:var(--muted);margin:6px 0 12px">Have questions, bulk orders, or partnership ideas?
+                        Drop a message and we’ll reply within 48 hours.</p>
+
+                    <!-- NOTE: replace action with your server endpoint or 3rd-party form handler -->
+                    <form class="contact-form" action="#" method="POST" onsubmit="submitContact(event)">
+                        <div class="row">
+                            <div class="col">
+                                <label for="name" style="font-weight:600;font-size:13px;color:var(--brand-dark)">Full
+                                    name</label>
+                                <input id="name" name="name" type="text" placeholder="Your name" required>
+                            </div>
+                            <div class="col">
+                                <label for="phone"
+                                    style="font-weight:600;font-size:13px;color:var(--brand-dark)">Phone</label>
+                                <input id="phone" name="phone" type="tel" placeholder="+855 12 345 678" required>
+                            </div>
+                        </div>
+
+                        <label for="email" style="font-weight:600;font-size:13px;color:var(--brand-dark)">Email</label>
+                        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+                        <label for="message"
+                            style="font-weight:600;font-size:13px;color:var(--brand-dark)">Message</label>
+                        <textarea id="message" name="message" placeholder="Tell us how we can help..."
+                            required></textarea>
+
+                        <button class="btn-primary" type="submit">Send Message</button>
+                        <div id="contact-feedback"
+                            style="margin-top:10px;color:var(--muted);font-size:13px;display:none"></div>
+                    </form>
+                </div>
+
+                <!-- Map & details -->
+                <aside class="contact-card" aria-label="Location and hours">
+                    <h4 style="margin-top:0">Visit us</h4>
+                    <p style="color:var(--muted);margin:6px 0 12px"><strong>Address:</strong> Street Name, Phnom Penh,
+                        Cambodia<br><strong>Email:</strong> support@bookheaven.com<br><strong>Phone:</strong> +855 12
+                        345 678</p>
+
+                    <h5 style="margin-bottom:6px">Opening hours</h5>
+                    <p style="color:var(--muted);margin-top:6px">
+                        Mon — Fri: 9:00 — 18:00<br>
+                        Sat: 9:00 — 15:00<br>
+                        Sun: Closed
+                    </p>
+
+                    <div style="margin-top:12px;border-radius:10px;overflow:hidden">
+                        <!-- Replace src with Google Maps embed or your map iframe -->
+                        <iframe title="book heaven map"
+                            src="https://maps.google.com/maps?q=Phnom%20Penh&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            width="100%" height="220" style="border:0" loading="lazy"></iframe>
+                    </div>
+                </aside>
             </div>
-
-            <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-            </div>
-
-            <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
-            </div>
-
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
-            </div>
-
-            <button type="submit" class="submit-btn">Send Message</button>
-        </form>
-    </section>
+        </section>
 
 
     <!-- Footer Section -->
@@ -97,7 +133,7 @@
             <div class="footer-contact">
                 <h3>Contact Us</h3>
                 <p>Email: support@bookheaven.com</p>
-                <p>Phone: +123 456 789</p>
+                <p>Phone: 097 456 789</p>
                 <p>Location: Phnom Penh, Cambodia</p>
             </div>
         </div>

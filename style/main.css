@@ -20,9 +20,27 @@ header {
     align-items: center;
 }
 
+.nav-link {
+    padding: 10px 20px;
+    /* background-color: #0f0062; */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.nav-link :hover {
+    background-color: #ffd700;
+    border-radius: 10px;
+    color: #0f0062;
+}
+
 header nav {
     width: 100%;
     padding: 0px 24px;
+    background-color: rgb(22, 22, 168);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -31,8 +49,8 @@ header nav {
 header nav h4 {
     display: flex;
     align-items: center;
-    gap: 8px;
-    color: rgb(22, 22, 168);
+    color: #ffd700;
+    gap: 12px;
     font-weight: bold;
     font-size: 24px
 }
@@ -52,7 +70,7 @@ header nav div a {
     gap: 4px;
     text-decoration: none;
     /* text-decoration: none; use to delete underline */
-    color: rgb(22, 22, 168);
+    color: rgb(255, 255, 255);
     padding: 20px;
     font-weight: bold;
 }
@@ -76,10 +94,11 @@ header .auth button {
     font-weight: bold;
 }
 .signup {
-    background: rgb(22, 22, 168);
-    color: #fff;
+    color:rgb(22, 22, 168);
     font-weight: bold;
 }
+
+
 
 /* main  */
 main {
@@ -104,7 +123,7 @@ main {
 }
 
 .main-text h4 {
-    color: #f7b731;
+    color: #ffd700;
     font-size: 50px;
     margin-bottom: 10px;
     font-style: italic;
@@ -165,7 +184,7 @@ article {
     display: flex;
     justify-content: center;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 article .trending-kh h3{
@@ -177,7 +196,7 @@ article .trending-kh h3{
     background-color: #f7f7f7;
     width: 90%;
     padding: 20px 40px;
-    padding-top: 30px;
+    padding-top: 20px;
     border-radius: 20px;
 }
 
@@ -325,7 +344,7 @@ section {
     text-align: center;
     background-color: #f7f7f7;
     width: 90%;
-    padding: 20px 40px;
+    padding: 20px 30px;
     border-radius: 20px;
 }
 

@@ -1,66 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Category</title>
-    <link rel="stylesheet" href="../style/category.css">
-    <link rel="stylesheet" href="../style/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Category</title>
+  <link rel="stylesheet" href="../style/category.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <h4>
-                <img src="image/logo2.png" alt="">
-                <span>BOOK HEAVEN</span4>
-                    <!-- span brer nv pel jg display inline -->
-            </h4>
+  <header>
+    <nav>
+      <h4>
+        <img src="image/logo2.png" alt="">
+        <span>BOOK HEAVEN</span4>
+          <!-- span brer nv pel jg display inline -->
+      </h4>
+      <div class="nav-link">
+        <a href="../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="category.html">Category</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="auth">
+        <button class="login">Log In</button>
+        <button class="signup">Sign Up</button>
+      </div>
+    </nav>
+  </header>
 
-            <div class="nav-link">
-                <a href="../index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="category.html">Category</a>
-                <a href="contact.html">Contact</a>
+  <!-- Categories menu -->
+  <main class="main">
+    <div class="main-category">
+      <nav class="categories">
+        <a href="#upcoming">Upcoming</a>
+        <a href="#trending">Trending</a>
+        <a href="#discount">Discount</a>
+        <a href="#novel">Novels</a>
+        <a href="#comics">Comics</a>
+        <a href="#history">History</a>
+        <a href="#english">English Learning</a>
+        <a href="#summary">Summaries</a>
+      </nav>
+
+      <!-- Example category -->
+      <section id="upcoming">
+        <h2>Upcoming Books</h2>
+        <div class="grid">
+          <div class="book-card">
+            <img src="https://via.placeholder.com/200x270/efe8ff/3b2c6b?text=Upcoming+1" alt="Book cover"
+              class="book-cover">
+            <div class="book-info">
+              <div class="book-title">The Future Dawn</div>
+              <div class="book-author">Sophea K.</div>
+              <div class="book-price">$9.99</div>
             </div>
-            <div class="auth">
-                <button class="login">Log In</button>
-                <button class="signup">Sign Up</button>
+          </div>
+          <div class="book-card">
+            <img src="https://via.placeholder.com/200x270/fff3d1/7a4b00?text=Upcoming+2" alt="Book cover"
+              class="book-cover">
+            <div class="book-info">
+              <div class="book-title">Rising Voices</div>
+              <div class="book-author">Chan Dara</div>
+              <div class="book-price">$12.00</div>
             </div>
-        </nav>
-    </header>
-    <!-- Horizontal categories -->
-  <div class="categories">
-    <button class="category" onclick="showBooks('novel')">Novel</button>
-    <button class="category" onclick="showBooks('comics')">Comics</button>
-    <button class="category" onclick="showBooks('history')">History</button>
-    <button class="category" onclick="showBooks('education')">Education</button>
-    <button class="category" onclick="showBooks('funstory')">Fun Story</button>
-  </div>
+          </div>
+          <!-- Add more books here -->
+        </div>
+      </section>
 
-  <!-- Books -->
-  <div class="books" id="books-container">
-    <!-- Example books -->
-    <div class="book" data-type="novel">Novel 1</div>
-    <div class="book" data-type="comics">Comic 1</div>
-    <div class="book" data-type="history">History 1</div>
-    <div class="book" data-type="education">Education 1</div>
-    <div class="book" data-type="funstory">Fun Story 1</div>
-    <div class="book" data-type="novel">Novel 2</div>
-    <div class="book" data-type="comics">Comic 2</div>
-    <!-- Add more books as needed -->
+      <!-- Another category -->
+      <section id="novel">
+        <h2>Novel Books</h2>
+        <div class="grid">
+          <div class="book-card">
+            <img src="https://via.placeholder.com/200x270/faf0d8/5b3a00?text=Novel+1" alt="Book cover"
+              class="book-cover">
+            <div class="book-info">
+              <div class="book-title">A Long Journey</div>
+              <div class="book-author">Nita R.</div>
+              <div class="book-price">$14.50</div>
+            </div>
+          </div>
+          <div class="book-card">
+            <img src="https://via.placeholder.com/200x270/f2e8ff/3f2070?text=Novel+2" alt="Book cover"
+              class="book-cover">
+            <div class="book-info">
+              <div class="book-title">Silent River</div>
+              <div class="book-author">Piseth S.</div>
+              <div class="book-price">$11.00</div>
+            </div>
+          </div>
+        </div>
+  </main>
   </div>
-
-  <script>
-    function showBooks(type) {
-      const books = document.querySelectorAll('.book');
-      books.forEach(book => {
-        if(type === 'all' || book.dataset.type === type){
-          book.style.display = 'block';
-        } else {
-          book.style.display = 'none';
-        }
-      });
-    }
-  </script>
 </body>
+
 </html>
