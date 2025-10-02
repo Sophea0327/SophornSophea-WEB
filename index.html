@@ -7,40 +7,37 @@
     <title>Home page</title>
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
 </head>
 
 <body>
     <header>
-        <nav>
-            <h4>
-                <img src="image/logo2.png" alt="">
-                <span>BOOK HEAVEN</span4>
-                    <!-- span brer nv pel jg display inline -->
-            </h4>
+        <div class="navbar">
+            <div class="logo">
+                <i class="fas fa-book-open"></i>
+                <span>BOOK HEAVEN</span>
+            </div>
 
-            <div class="nav-link">
+            <nav class="nav-links">
+                <a href="#"><i class="fas fa-heart"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
                 <a href="index.html">Home</a>
                 <a href="pages/about.html">About</a>
                 <a href="pages/category.html">Category</a>
                 <a href="pages/contact.html">Contact</a>
-            </div>
-            <div class="auth">
-                <button class="login">Log In</button>
-                <button class="signup">Sign Up</button>
-            </div>
-        </nav>
+            </nav>
+
+        </div>
     </header>
 
     <!-- main -->
     <main>
         <div class="main">
             <div class="main-text">
-                <h4>BOOK HEAVEN</h4>
-                <h1>Welcome to the world of endless stories.</h1>
-                <p>a digital home for stories that inspire, entertain, and spark imagination.
-                    From timeless classics to modern tales, explore a world of adventures, mysteries,
-                    and dreams all just a click away. Start your journey today and let every story take you somewhere
-                    new.</p>
+                <h4>“Heaven for Every Book Lover.”</h4>
+                <h1>Book Heaven – Where Every Page Opens a New World and Every Story Touches Your Heart.</h1>
                 <div class="buttons">
                     <button class="btn-primary">Read Now</button>
                 </div>
@@ -54,332 +51,175 @@
 
 
     <!-- Trending - Khmer -->
-    <article>
-        <div class="trending-kh">
-            <div class="header-book">
-                <h1 class="title">Khmer Trending Books</h1>
-                <button class="arrow-btn">See more</button>
-            </div>
-            <div class="books-grid">
-                <!-- Book 1: By the Horns -->
-                <div class="book-card">
-                    <div class="book-image">
-                        <img src="image/b-kh/b-kh1.png" alt="">
-                    </div>
-                    <h3 class="author">ជួបគ្នា១៥ឆ្នាំក្រោយ</h3>
-                    <p class="title-book">By Manith Jupiter</p>
-                    <div class="price-book">
-                        <span class="price">$20.00</span>
-                        <button class="cart-btn">🛒</button>
-                    </div>
-                    <button class="more-btn">Buy Now</button>
+    <aside>
+        <div class="library-section">
+            <h2>Discount Books</h2>
+            <div class="book-row">
+                <!-- 20 book cards -->
+                <div class="book-card"><img src="image/b-kh/b-kh1.png" alt="Book Cover">
+                    <h3>Whispers of Dawn</h3>
+                    <p>By Anna Wells</p>
+                    <p class="price">$9.99</p><button class="buy-btn">Buy Now</button>
                 </div>
-
-                <div class="book-card">
-                    <div class="book-image">
-                        <img src="image/b-kh/b-kh2.png" alt="">
-                    </div>
-                    <h3 class="author">រលកបោកខ្យល់</h3>
-                    <p class="title-book">By Manith Jupiter</p>
-                    <div class="price-book">
-                        <span class="price">$20.00</span>
-                        <button class="cart-btn">🛒</button>
-                    </div>
-                    <button class="more-btn">Buy Now</button>
+                <div class="book-card"><img src="image/b-kh/b-kh2.png" alt="Book Cover">
+                    <h3>The Hidden Key</h3>
+                    <p>By Mark Thompson</p>
+                    <p class="price">$12.50</p><button class="buy-btn">Buy Now</button>
                 </div>
-
-                <div class="book-card">
-                    <div class="book-image">
-                        <img src="image/b-kh/b-kh3.png" alt="">
-                    </div>
-                    <h3 class="author">សែងសុសិយា</h3>
-                    <p class="title-book">By Manith Jupiter</p>
-                    <div class="price-book">
-                        <span class="price">$20.00</span>
-                        <button class="cart-btn">🛒</button>
-                    </div>
-                    <button class="more-btn">Buy Now</button>
+                <div class="book-card"><img src="image/b-kh/b-kh3.png" alt="Book Cover">
+                    <h3>Silent Storm</h3>
+                    <p>By Leila Chan</p>
+                    <p class="price">$8.75</p><button class="buy-btn">Buy Now</button>
                 </div>
-
-                <div class="book-card">
-                    <div class="book-image">
-                        <img src="image/b-kh/b-kh4.png" alt="">
-                    </div>
-                    <h3 class="author">ប្រលោមចិត្ត​ ភាគ២</h3>
-                    <p class="title-book">By Manith Jupiter</p>
-                    <div class="price-book">
-                        <span class="price">$20.00</span>
-                        <button class="cart-btn">🛒</button>
-                    </div>
-                    <button class="more-btn">Buy Now</button>
+                <div class="book-card"><img src="image/b-kh/b-kh4.png" alt="Book Cover">
+                    <h3>Journey Beyond</h3>
+                    <p>By David Kim</p>
+                    <p class="price">$11.20</p><button class="buy-btn">Buy Now</button>
                 </div>
-
-                <div class="book-card">
-                    <div class="book-image">
-                        <img src="image/b-kh/b-kh5.png" alt="">
-                    </div>
-                    <h3 class="author">ប្រលោមចិត្ត​ ភាគ១</h3>
-                    <p class="title-book">By Manith Jupiter</p>
-                    <div class="price-book">
-                        <span class="price">$20.00</span>
-                        <button class="cart-btn">🛒</button>
-                    </div>
-                    <button class="more-btn">Buy Now</button>
+                <div class="book-card"><img src="image/b-kh/b-kh5.png" alt="Book Cover">
+                    <h3>Echoes of Time</h3>
+                    <p>By Maria Lopez</p>
+                    <p class="price">$10.00</p><button class="buy-btn">Buy Now</button>
                 </div>
-
-                <!-- <div class="book-card">
-                    <div class="book-image">
-                        <img src="image/b-kh6.png" alt="">
-                    </div>
-                    <h3 class="author">ស្នេហ៍ក្នុងអណ្តាតភ្លើង</h3>
-                    <p class="title-book">By Manith Jupiter</p>
-                    <div class="price-book">
-                        <span class="price">$20.00</span>
-                        <button class="cart-btn">🛒</button>
-                    </div>
-                    <button class="more-btn">Read Now</button>
-                </div> -->
-
-                <div class="book-card">
-                    <div class="book-image">
-                        <img src="image/b-kh/b-kh7.png" alt="">
-                    </div>
-                    <h3 class="author">អតិតកាលដែលខ្ញុំគ្មាន</h3>
-                    <p class="title-book">By Manith Jupiter</p>
-                    <div class="price-book">
-                        <span class="price">$20.00</span>
-                        <button class="cart-btn">🛒</button>
-                    </div>
-                    <button class="more-btn">Buy Now</button>
+                <div class="book-card"><img src="image/b-kh/b-kh6.png" alt="Book Cover">
+                    <h3>Crimson Skies</h3>
+                    <p>By Omar Ali</p>
+                    <p class="price">$7.99</p><button class="buy-btn">Buy Now</button>
                 </div>
-
-                <div class="book-card">
-                    <div class="book-image">
-                        <img src="image/b-kh/b-kh8.png" alt="">
-                    </div>
-                    <h3 class="author">ផ្ការីកនាយសមុទ្រ</h3>
-                    <p class="title-book">By Manith Jupiter</p>
-                    <div class="price-book">
-                        <span class="price">$20.00</span>
-                        <button class="cart-btn">🛒</button>
-                    </div>
-                    <button class="more-btn">vBuy Now</button>
+                <div class="book-card"><img src="image/b-kh/b-kh7.png" alt="Book Cover">
+                    <h3>Frozen Paths</h3>
+                    <p>By Sophia Carter</p>
+                    <p class="price">$9.50</p><button class="buy-btn">Buy Now</button>
                 </div>
-
+                <div class="book-card"><img src="image/b-kh/b-kh8.png" alt="Book Cover">
+                    <h3>Shadowed Truth</h3>
+                    <p>By Kevin Brown</p>
+                    <p class="price">$8.30</p><button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="book-card"><img src="image/b-kh/b-kh9.png" alt="Book Cover">
+                    <h3>Whispers of Dawn</h3>
+                    <p>By Anna Wells</p>
+                    <p class="price">$9.99</p><button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="book-card"><img src="image/b-kh/b-kh10.png" alt="Book Cover">
+                    <h3>Whispers of Dawn</h3>
+                    <p>By Anna Wells</p>
+                    <p class="price">$9.99</p><button class="buy-btn">Buy Now</button>
+                </div>
             </div>
         </div>
-    </article>
+    </aside>
+
+
 
     <!-- Trending - Khmer -->
-    <article>
-        <div class="trending-kh">
-            <div class="header-book">
-                <h1 class="title">English Trending Books</h1>
-                <button class="arrow-btn">See more</button>
-            </div>
-            <div class="books-grid">
-                <!-- Book 1: By the Horns -->
-                <div class="book-card">
-                    <div class="book-image">
-                        <img src="image/b-eng/b-eng1.png" alt="">
-                    </div>
-                    <h3 class="author">ជួបគ្នា១៥ឆ្នាំក្រោយ</h3>
-                    <p class="title-book">By Manith Jupiter</p>
-                    <div class="price-book">
-                        <span class="price">$20.00</span>
-                        <button class="cart-btn">🛒</button>
-                    </div>
-                    <button class="more-btn">Buy Now</button>
+    <aside>
+        <div class="library-section">
+            <h2>Discount Books</h2>
+            <div class="book-row">
+                <!-- 20 book cards -->
+                <div class="book-card"><img src="image/b-eng/b-eng1.png" alt="Book Cover">
+                    <h3>Whispers of Dawn</h3>
+                    <p>By Anna Wells</p>
+                    <p class="price">$9.99</p><button class="buy-btn">Buy Now</button>
                 </div>
-
-                <div class="book-card">
-                    <div class="book-image">
-                        <img src="image/b-eng/b-eng2.png" alt="">
-                    </div>
-                    <h3 class="author">រលកបោកខ្យល់</h3>
-                    <p class="title-book">By Manith Jupiter</p>
-                    <div class="price-book">
-                        <span class="price">$20.00</span>
-                        <button class="cart-btn">🛒</button>
-                    </div>
-                    <button class="more-btn">Buy Now</button>
+                <div class="book-card"><img src="image/b-eng/b-eng2.png" alt="Book Cover">
+                    <h3>The Hidden Key</h3>
+                    <p>By Mark Thompson</p>
+                    <p class="price">$12.50</p><button class="buy-btn">Buy Now</button>
                 </div>
-
-                <div class="book-card">
-                    <div class="book-image">
-                        <img src="image/b-eng/b-eng3.png" alt="">
-                    </div>
-                    <h3 class="author">សែងសុសិយា</h3>
-                    <p class="title-book">By Manith Jupiter</p>
-                    <div class="price-book">
-                        <span class="price">$20.00</span>
-                        <button class="cart-btn">🛒</button>
-                    </div>
-                    <button class="more-btn">Buy Now</button>
+                <div class="book-card"><img src="image/b-eng/b-eng3.png" alt="Book Cover">
+                    <h3>Silent Storm</h3>
+                    <p>By Leila Chan</p>
+                    <p class="price">$8.75</p><button class="buy-btn">Buy Now</button>
                 </div>
-
-                <div class="book-card">
-                    <div class="book-image">
-                        <img src="image/b-eng/b-eng4.png" alt="">
-                    </div>
-                    <h3 class="author">ប្រលោមចិត្ត​ ភាគ២</h3>
-                    <p class="title-book">By Manith Jupiter</p>
-                    <div class="price-book">
-                        <span class="price">$20.00</span>
-                        <button class="cart-btn">🛒</button>
-                    </div>
-                    <button class="more-btn">Buy Now</button>
+                <div class="book-card"><img src="image/b-eng/b-eng4.png" alt="Book Cover">
+                    <h3>Journey Beyond</h3>
+                    <p>By David Kim</p>
+                    <p class="price">$11.20</p><button class="buy-btn">Buy Now</button>
                 </div>
-
-                <div class="book-card">
-                    <div class="book-image">
-                        <img src="image/b-eng/b-eng5.png" alt="">
-                    </div>
-                    <h3 class="author">ប្រលោមចិត្ត​ ភាគ១</h3>
-                    <p class="title-book">By Manith Jupiter</p>
-                    <div class="price-book">
-                        <span class="price">$20.00</span>
-                        <button class="cart-btn">🛒</button>
-                    </div>
-                    <button class="more-btn">Buy Now</button>
+                <div class="book-card"><img src="image/b-eng/b-eng5.png" alt="Book Cover">
+                    <h3>Echoes of Time</h3>
+                    <p>By Maria Lopez</p>
+                    <p class="price">$10.00</p><button class="buy-btn">Buy Now</button>
                 </div>
-
-                <!-- <div class="book-card">
-                    <div class="book-image">
-                        <img src="image/b-kh6.png" alt="">
-                    </div>
-                    <h3 class="author">ស្នេហ៍ក្នុងអណ្តាតភ្លើង</h3>
-                    <p class="title-book">By Manith Jupiter</p>
-                    <div class="price-book">
-                        <span class="price">$20.00</span>
-                        <button class="cart-btn">🛒</button>
-                    </div>
-                    <button class="more-btn">Read Now</button>
-                </div> -->
-
-                <div class="book-card">
-                    <div class="book-image">
-                        <img src="image/b-eng/b-eng6.png" alt="">
-                    </div>
-                    <h3 class="author">អតិតកាលដែលខ្ញុំគ្មាន</h3>
-                    <p class="title-book">By Manith Jupiter</p>
-                    <div class="price-book">
-                        <span class="price">$20.00</span>
-                        <button class="cart-btn">🛒</button>
-                    </div>
-                    <button class="more-btn">Buy Now</button>
+                <div class="book-card"><img src="image/b-eng/b-eng6.png" alt="Book Cover">
+                    <h3>Crimson Skies</h3>
+                    <p>By Omar Ali</p>
+                    <p class="price">$7.99</p><button class="buy-btn">Buy Now</button>
                 </div>
-
-                <div class="book-card">
-                    <div class="book-image">
-                        <img src="image/b-eng/b-eng7.png" alt="">
-                    </div>
-                    <h3 class="author">ផ្ការីកនាយសមុទ្រ</h3>
-                    <p class="title-book">By Manith Jupiter</p>
-                    <div class="price-book">
-                        <span class="price">$20.00</span>
-                        <button class="cart-btn">🛒</button>
-                    </div>
-                    <button class="more-btn">Buy Now</button>
+                <div class="book-card"><img src="image/b-eng/b-eng7.png" alt="Book Cover">
+                    <h3>Frozen Paths</h3>
+                    <p>By Sophia Carter</p>
+                    <p class="price">$9.50</p><button class="buy-btn">Buy Now</button>
                 </div>
-
+                <div class="book-card"><img src="image/b-eng/b-eng8.png" alt="Book Cover">
+                    <h3>Shadowed Truth</h3>
+                    <p>By Kevin Brown</p>
+                    <p class="price">$8.30</p><button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="book-card"><img src="image/b-eng/b-eng9.png" alt="Book Cover">
+                    <h3>Whispers of Dawn</h3>
+                    <p>By Anna Wells</p>
+                    <p class="price">$9.99</p><button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="book-card"><img src="image/b-eng/b-eng10.png" alt="Book Cover">
+                    <h3>Whispers of Dawn</h3>
+                    <p>By Anna Wells</p>
+                    <p class="price">$9.99</p><button class="buy-btn">Buy Now</button>
+                </div>
             </div>
         </div>
-    </article>
-
-    
-
-    <!-- section -->
-    <section>
-        <div class="library-section">
-            <div class="top-section">
-                <h2>Our Library Survey</h2>
-                <p>With thousands of digital and printable resources, find the best resource for you.</p>
-
-            </div>
-            <div class="cards">
-                <!-- Card 1 -->
-                <div class="card-section">
-                    <h3>Lesson Plans</h3>
-                    <p>A bookshop website is designed to make finding and buying books easy and enjoyable. 
-                        It usually has categories like novels, history, education, and fun stories.
-                         By visiting a bookshop online, 
-                        readers can discover new authors, explore different genres, and enjoy the convenience of purchasing books from anywhere.</p>
-                    <button>Plan my lesson today</button>
-                </div>
-                <!-- Card 2 -->
-                <div class="card-section">
-                    <h3>Worksheets</h3>
-                    <p>Welcome to our bookshop, your destination for stories, novels, 
-                        history, and fun reads for all ages. We offer a wide selection of books to inspire learning,
-                         and provide hours of enjoyment. Whether you are searching for educational resources, 
-                        thrilling stories, or timeless classics, our bookshop brings the joy of reading right to your fingertips.</p>
-                    <button>Check it out</button>
-                </div>
-                <!-- Card 3 -->
-                <div class="card-section">
-                    <h3>Activities</h3>
-                    <p>A bookshop website is designed to make finding and buying books easy and enjoyable. 
-                        It usually has categories like novels, history, education, and fun stories.
-                         By visiting a bookshop online,
-                         readers can discover new authors, explore different genres, and enjoy the convenience of purchasing books from anywhere.</p>
-                    <button>Make something now</button>
-                </div>
-            </div>
-    </section>
+    </aside>
 
 
 
-    
-    
 
     <!-- Footer Section -->
-<footer class="footer">
-  <div class="footer-container">
-    
-    <!-- Logo & About -->
-    <div class="footer-about">
-      <h2>BOOK HEAVEN</h2>
-      <p>Your digital home for timeless classics, modern tales, and endless imagination.</p>
-    </div>
+    <footer class="footer">
+        <div class="footer-container">
 
-    <!-- Quick Links -->
-    <div class="footer-links">
-      <h3>Quick Links</h3>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Category</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
+            <!-- Logo & About -->
+            <div class="footer-about">
+                <h2>BOOK HEAVEN</h2>
+                <p>"Where Every Page Opens a New World and Every Story Touches Your Heart"</p>
+            </div>
 
-    <!-- Categories -->
-    <div class="footer-categories">
-      <h3>Categories</h3>
-      <ul>
-        <li><a href="#">Novels</a></li>
-        <li><a href="#">History</a></li>
-        <li><a href="#">Education</a></li>
-        <li><a href="#">Comics</a></li>
-        <li><a href="#">Funny Stories</a></li>
-      </ul>
-    </div>
+            <!-- Quick Links -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Category</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
 
-    <!-- Contact Info -->
-    <div class="footer-contact">
-      <h3>Contact Us</h3>
-      <p>Email: support@bookheaven.com</p>
-      <p>Phone: 097 456 789</p>
-      <p>Location: Phnom Penh, Cambodia</p>
-    </div>
-  </div>
+            <!-- Categories -->
+            <div class="footer-categories">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#">Novels</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Comics</a></li>
+                </ul>
+            </div>
 
-  <!-- Bottom -->
-  <div class="footer-bottom">
-    <p>© 2025 Book Heaven. All rights reserved.</p>
-  </div>
-</footer>
+            <!-- Contact Info -->
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: support@bookheaven.com</p>
+                <p>Phone: 097 456 789</p>
+                <p>Location: Phnom Penh, Cambodia</p>
+            </div>
+        </div>
+
+        <!-- Bottom -->
+        <div class="footer-bottom">
+            <p>© 2025 Book Heaven. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 
 </html>

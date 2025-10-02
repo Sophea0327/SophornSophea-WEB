@@ -7,30 +7,29 @@
     <title>Home page</title>
     <link rel="stylesheet" href="../style/contact.css">
     <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="../style/header.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <nav>
-            <h4>
-                <img src="image/logo2.png" alt="">
-                <span>BOOK HEAVEN</span4>
-                    <!-- span brer nv pel jg display inline -->
-            </h4>
+        <div class="navbar">
+            <div class="logo">
+                <i class="fas fa-book-open"></i>
+                <span>BOOK HEAVEN</span>
+            </div>
 
-            <div class="nav-link">
+            <nav class="nav-links">
+                <a href="#"><i class="fas fa-heart"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
                 <a href="../index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="category.html">Category</a>
                 <a href="contact.html">Contact</a>
-            </div>
-            <div class="auth">
-                <button class="login">Log In</button>
-                <button class="signup">Sign Up</button>
-            </div>
-        </nav>
+            </nav>
+
+        </div>
     </header>
-    <hr>
 
    <!-- Contact & Location -->
         <section id="contact" aria-labelledby="contact-title">
@@ -122,10 +121,8 @@
                 <h3>Categories</h3>
                 <ul>
                     <li><a href="#">Novels</a></li>
-                    <li><a href="#">History</a></li>
                     <li><a href="#">Education</a></li>
                     <li><a href="#">Comics</a></li>
-                    <li><a href="#">Funny Stories</a></li>
                 </ul>
             </div>
 
