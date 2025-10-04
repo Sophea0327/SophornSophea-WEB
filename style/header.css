@@ -53,3 +53,58 @@ header {
 .icons a:hover {
   color: #FFD700;
 }
+
+/* --- Responsive Design --- */
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+  header {
+    padding: 18px 30px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  .nav-links a {
+    font-size: 15px;
+  }
+
+  .icons {
+    gap: 15px;
+  }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+    display: block;
+  }
+
+  .icons {
+    gap: 12px;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+}
