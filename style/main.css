@@ -99,6 +99,10 @@ main {
     color: #fff;
 }
 
+.btn-primary:hover{
+    background-color: #c88a06;
+}
+
 
 /* Hero Image */
 .hero-image img {
@@ -184,14 +188,14 @@ aside .price {
 }
 
 aside .price .original {
-  text-decoration: line-through;
-  color: #888;
-  margin-right: 6px;
+    text-decoration: line-through;
+    color: #888;
+    margin-right: 6px;
 }
 
 aside .price .sale {
-  color: #e53935;
-  font-weight: bold;
+    color: #e53935;
+    font-weight: bold;
 }
 
 aside .buy-btn {
@@ -207,4 +211,108 @@ aside .buy-btn {
 
 aside .buy-btn:hover {
     background: #d08101;
+}
+
+
+
+
+
+
+
+
+
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .main {
+        flex-direction: column;
+        text-align: center;
+        padding: 4px 8px;
+    }
+
+    .main-text {
+        max-width: 90%;
+    }
+
+    .hero-image img {
+        width: 90%;
+        margin-top: 10px;
+        max-width: 350px;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .search-box {
+        max-width: 100%;
+    }
+
+    aside {
+        padding: 8px;
+    }
+
+    aside h2 {
+        font-size: px;
+    }
+
+    aside .book-card h3 {
+        font-size: 10px;
+    }
+
+    .book-card {
+        width: 100px;
+    }
+
+    aside .book-card p {
+        font-size: 8px;
+    }
+
+    aside .book-card img {
+        height: 200px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .main-text h4 {
+        font-size: 18px;
+    }
+
+    .main-text h1 {
+        font-size: 14px;
+    }
+
+    .btn-primary {
+        padding: 10px 16px;
+        font-size: 10px;
+    }
+
+    .library-section h2 {
+        font-size: 16px;
+    }
+
+    .hero-image img {
+        width: 50%;
+        margin-top: 10px;
+        max-width: 350px;
+    }
+
+    h2 {
+        font-size: 2px;
+    }
+
+    aside .book-card {
+        width: 100px;
+    }
+
+    aside .book-card img {
+        object-fit: cover;
+        width: 120px;
+        height: 160px;
+    }
+
+    .book-card h3 {
+        font-size: 10px;
+    }
 }

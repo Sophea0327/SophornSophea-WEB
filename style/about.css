@@ -7,34 +7,31 @@
 }
 
 body {
+  overflow-x: hidden;
   background-color: #ffffff;
 }
 
 /* About Section */
 .about-container {
-    max-width: 1100px;
-    width: 100%;
-    margin: 0 auto; 
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center; 
-    gap: 100px;
-    padding: 60px 20px;
-    background-color: #fdfcf8; 
-    border-radius: 12px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
-    text-align: center;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 60px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between; 
+  gap: 60px;
 }
 
+
 .about-text {
-    flex: 1;
-    background-color: #f7f7fb;
-    width: 60;
-    border-radius: 14px;
-    min-width: 320px;
-    padding: 10px;
+  flex: 1;
+  background-color: #f7f7fb;
+  width: 60%; 
+  border-radius: 14px;
+  padding: 10px;
 }
+
 
 .about-text h1 {
     font-size: 2.4rem;
@@ -256,4 +253,200 @@ body {
 
 .partner-img{
   width: 200px;
+}
+
+
+
+
+
+
+
+
+
+/* Tablete */
+@media (max-width: 1024px) {
+
+  .about-container {
+    flex-direction: column;
+    gap: 60px;
+    padding: 50px 40px;
+  }
+
+  .about-text, 
+  .about-image {
+    flex: unset;
+    width: 100%;
+    max-width: 700px;
+  }
+
+  .about-text h1 {
+    font-size: 2rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+  }
+
+  .info-cards {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 40px;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 600px;
+  }
+
+  .timeline-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .feedback-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+
+  .partnerships h2{
+    font-size: 30px;
+  }
+  .partners-container {
+    gap: 20px;
+  }
+
+  .partner-card {
+    width: 200px;
+  }
+
+  .partner-img{
+    width: 100px;
+  }
+}
+
+
+
+/* Mobile */
+@media (max-width: 480px) {
+
+  .about-container {
+    display: flex;
+    justify-content: center;
+    padding: 30px 15px;
+    margin-right: 20px;
+    gap: 40px;
+  }
+  .about-text{
+    width: 100%;
+    display: inline;
+  }
+  .about-text h1 {
+    font-size: 18px;
+  }
+
+  .about-text p {
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .about-text .btn {
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+
+  .about-image
+
+  .about-image img {
+    border-radius: 10px;
+    width: 350px;
+  }
+
+  .about-image p{
+    font-size: 10px;
+    text-align: center;
+    margin-left: 60px;
+  }
+
+  .info-cards {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .card {
+    width: 340px;
+    padding: 15px;
+  }
+
+  .card h2{
+    font-size: 16px;
+  }
+  .card p{
+    font-size: 12px;
+  }
+
+  .timeline, 
+  .services, 
+  .feedbacks, 
+  .partnerships {
+    padding: 25px 15px;
+  }
+
+  .timeline h2{
+    font-size: 18px;
+  }
+
+  .timeline-grid, 
+  .service-grid, 
+  .feedback-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .time-box h3{
+    font-size: 16px;
+  }
+
+  .time-box p{
+    font-size: 12px;
+  }
+
+  .services h2{
+    font-size: 18px;
+  }
+
+  .services h2{
+    font-size: 16px;
+  }
+
+  .services .service{
+    font-size: 12px;
+    font-weight: lighter;
+  }
+
+  .feedbacks h2{
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .feedback-grid .feedback{
+    font-size: 12px;
+  }
+
+  .partner-card {
+    width: 100%;
+  }
+
+  .partner-img {
+    width: 100px;
+  }
+
+  .partner-card h3{
+    font-size: 16px;
+  }
+
+  .partner-card p{
+    font-size: 12px;
+  }
+
+  .partnerships h2 {
+    font-size: 1.7rem;
+  }
 }
