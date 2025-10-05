@@ -179,13 +179,14 @@ body {
 /* Tablets */
 @media (max-width: 1024px) {
   .container {
-    display: grid;
-    margin-left: 20px;
+    display: flex;
+    margin-left: 80px;
   }
 
   .books-grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
   }
 
   .book-card {
@@ -227,6 +228,7 @@ body {
 @media (max-width: 480px) {
   .container{
     display: flex;
+    margin-left: 38px;
   }
   .main {
     padding: 6px 0;

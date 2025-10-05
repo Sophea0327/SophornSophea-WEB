@@ -1,3 +1,4 @@
+
 header {
   background: #1414b8; /* Deep blue */
   padding: 24px 50px;
@@ -15,12 +16,12 @@ header {
   gap: 8px;
   font-size: 22px;
   font-weight: bold;
-  color: #FFD700; /* Gold */
+  color: #ffffff; /* Gold */
 }
 
 .logo i {
   font-size: 26px;
-  color: #FFD700;
+  color: #ffffff;
 }
 
 .nav-links {
