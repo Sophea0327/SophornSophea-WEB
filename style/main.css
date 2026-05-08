@@ -112,8 +112,19 @@ main {
 
 
 /* Hero Image */
+.hero-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 20px;
+}
+
 .hero-image img {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: contain;
     animation: float 3s ease-in-out infinite;
 }
 
@@ -244,9 +255,9 @@ aside .buy-btn:hover {
     }
 
     .hero-image img {
-        width: 900px;
-        margin-top: 190px;
         max-width: 350px;
+        width: 100%;
+        height: auto;
     }
 
     .buttons {
@@ -306,8 +317,9 @@ aside .buy-btn:hover {
     }
 
     .hero-image img {
-        width: 160px;
-        margin-top: 190px;
+        max-width: 200px;
+        width: 100%;
+        height: auto;
     }
 
     h2 {
